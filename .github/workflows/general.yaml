@@ -31,9 +31,9 @@ jobs:
       - name: Install sqlx-cli
         run:
           cargo install sqlx-cli
-          --version=${{ env.SQLX_VERSION }}
+          --version ${{ env.SQLX_VERSION }}
           --features ${{ env.SQLX_FEATURES }}
-          --no-defualt-features
+          --no-default-features
           --locked
           # The --locked flag can be used to force Cargo to use the packaged Cargo.lock file if it is available.
           # This may be useful for ensuring reproducible builds, to use the exact same set of dependencies that were available when the package was published.
@@ -81,9 +81,9 @@ jobs:
       - name: Install sqlx-cli
         run:
           cargo install sqlx-cli
-          --version=${{ env.SQLX_VERSION }}
+          --version ${{ env.SQLX_VERSION }}
           --features ${{ env.SQLX_FEATURES }}
-          --no-defualt-features
+          --no-default-features
           --locked
           # The --locked flag can be used to force Cargo to use the packaged Cargo.lock file if it is available.
           # This may be useful for ensuring reproducible builds, to use the exact same set of dependencies that were available when the package was published.
@@ -120,9 +120,9 @@ jobs:
       - name: Install sqlx-cli
         run:
           cargo install sqlx-cli
-          --version=${{ env.SQLX_VERSION }}
+          --version ${{ env.SQLX_VERSION }}
           --features ${{ env.SQLX_FEATURES }}
-          --no-defualt-features
+          --no-default-features
           --locked
           # The --locked flag can be used to force Cargo to use the packaged Cargo.lock file if it is available.
           # This may be useful for ensuring reproducible builds, to use the exact same set of dependencies that were available when the package was published.
